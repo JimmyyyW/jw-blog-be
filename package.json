@@ -4,7 +4,7 @@
   "description": "backend api for managing blog posts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r ts-node/register test/**test.ts",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p ."
@@ -23,11 +23,14 @@
     "@types/express": "^4.17.8",
     "@types/mongoose": "^5.7.36",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.3",
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "@types/mocha": "^8.0.3",
+    "mocha": "^8.1.3",
     "nodemon": "^2.0.4",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
