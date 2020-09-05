@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES5",
+    "watch": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true
+    },
+    "exclude": [
+    "node_modules"
+    ]
+}
