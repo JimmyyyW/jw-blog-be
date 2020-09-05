@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 //     res.send('Bello');
 // });
 
-app.get('/home', (request, response) => {
+app.get('/', (request, response) => {
     response.sendFile(path.resolve('src', 'pages/index.html'))
 });
 
