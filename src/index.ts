@@ -12,7 +12,7 @@ mongoose.connect(dbString, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         const app = express();
         app.use(express.json())
-        app.use("api", routes);
+        app.use("/api", routes);
         app.listen(PORT, () => console.log(`Server running on ${PORT}`));
     });
 
