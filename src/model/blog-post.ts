@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 
 const BlogPostSchema = new mongoose.Schema({
-    title: String,
-    description: String,
-    content: String
+    title: { type: String, required: true, unique: true },
+    description: { type: String },
+    content: { type: String }
 });
 
 export const BlogPost = mongoose.model('BlogPost', BlogPostSchema);
